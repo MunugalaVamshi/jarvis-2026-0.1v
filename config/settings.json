@@ -1,0 +1,13 @@
+{
+    "assistant_name": "JARVIS 2026 0.1 version",
+    "user_name": "Munugala Vamshi",
+    "wake_word_enabled": true,
+    "hud_style": "core",
+    "ollama_url": "http://127.0.0.1:11434",
+    "ollama_model": "llama3.2",
+    "llm_url": "http://127.0.0.1:11434",
+    "llm_model": "llama3.2",
+    "ollama_timeout": 180,
+    "input_device": "",
+    "output_device": ""
+}

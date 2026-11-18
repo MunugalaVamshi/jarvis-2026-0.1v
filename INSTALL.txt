@@ -1,0 +1,10 @@
+JARVIS local Ollama always-listening fix 0032
+
+1. Back up your existing project first.
+2. Extract this ZIP into the project root, preserving folders.
+3. Start Ollama in a separate CMD: ollama serve
+4. Run: py main.py
+
+Whisper VAD continuously listens locally. With wake-word mode enabled, only utterances beginning with “Hey Jarvis” or “Jarvis” are sent to Ollama; the wake phrase is stripped so the command in the same utterance is preserved. The microphone is never put to sleep. ESC interruption has been removed. Ollama streaming has no read timeout because local CPU inference can take several minutes before the first token.
+
+All included Python files passed syntax compilation. Runtime audio/model testing must be done on the target Windows PC.
